@@ -144,8 +144,25 @@ public class BestOfTheYearController {
         } 
     }
 
-    model.addAttribute("stringaFilmID", stringaSongID);
+    model.addAttribute("stringaCanzoneID", stringaSongID);
     return ("sceltaCanzone");
+    }
+
+    @GetMapping("/songs")
+    public String bestSongID2(Model model, @RequestParam int id){
+          
+    String stringaSongID2="";
+    List<song> listaCanzoni2=getBestSongs();
+
+    for (int i = 0; i < listaCanzoni2.size(); i++) {
+        if (listaCanzoni2.get(i).getIdCanzone()==id){
+            stringaSongID2 = listaCanzoni2.get(i).getNomeCanzone();
+            break;
+        } 
+    }
+
+    model.addAttribute("stringaCanzoneID2", stringaSongID2);
+    return ("sceltaCanzone2");
     }
 }
     
