@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>it.bestoftheyear</groupId>
-	<artifactId>best-of-the-year</artifactId>
+	<artifactId>bestoftheyear</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>best-of-the-year</name>
+	<name>bestoftheyear</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

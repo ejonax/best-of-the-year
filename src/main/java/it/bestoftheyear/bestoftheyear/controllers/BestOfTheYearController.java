@@ -148,7 +148,7 @@ public class BestOfTheYearController {
     return ("sceltaCanzone");
     }
 
-    @GetMapping("/songs")
+    @GetMapping("/songs2")
     public String bestSongID2(Model model, @RequestParam int id){
           
     String stringaSongID2="";
